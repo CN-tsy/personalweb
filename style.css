@@ -42,7 +42,7 @@ main section p {
 }
 .esi {
     height: 70vh;
-    background-image: url(texture/landS.png);
+    background-image: url(personalweb/texture/landS.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -142,3 +142,4 @@ main section p {
         opacity: 1;
     }
 }
+
