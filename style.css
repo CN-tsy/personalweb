@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    color: rgba(7, 7, 133, 0.952);
+    font-size: 16px;
+    background-color: rgb(146, 205, 233);
+    width: 100%;
+    height: 70px;
+}
+header h1 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    opacity: 0;
+    animation:slideR 1s ease forwards ;
+}
+header img{
+    width: auto;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+footer p {
+    color: grey;
+    font-size: 12px;
+}
+footer a {
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+main section p {
+    position: relative;
+    left: 10px;
+}
+.esi {
+    height: 70vh;
+    background-image: url(texture/landS.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.esi h4{
+    color:#fef7e6;
+    font-size: 25px;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideR 0.7s ease forwards;
+    animation-delay: 0.3s;
+}
+.esi li{
+    color:antiquewhite;
+    font-size: medium;
+    opacity: 0;
+    transition: 0.7s;
+    animation: slideT 1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+}
+.esi h2 {
+    color: white;
+    font-size: 40px;
+    margin: 10px 0;
+    opacity: 0;
+    transition: 0.3s;
+    animation: slideB 1s ease forwards;
+}
+.sm a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 5px;
+    border: 1px solid #fef7e6;
+    padding: 5px 10px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: 1s;
+    animation: slideL 0.7s ease forwards;
+    animation-delay: 0.6s;
+}
+.sm {
+    display: flex;
+}
+.bq {
+    height: 60px;
+    background-color: rgb(49, 49, 49);
+}
+.bq blockquote {
+    color: aliceblue;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    opacity: 0;
+    animation: slideR 1s ease forwards;
+    animation-delay: 0.7s;
+}
+/* 动画 */
+@keyframes slideR {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideL {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideB {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideT {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
