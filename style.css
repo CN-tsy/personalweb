@@ -10,6 +10,25 @@ header {
     width: 100%;
     height: 70px;
 }
+.nav {
+    text-decoration: none;
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 70px;
+}
+.nav a {
+    color: navy;
+    text-decoration: none;
+    margin-right: 4vw;
+    opacity: 0;
+    transition: 0.3s;
+    animation: slideT 1.1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+}
+.nav a:hover {
+    text-decoration: underline;
+}
 header h1 {
     position: relative;
     left: 20px;
@@ -24,25 +43,13 @@ header img{
     right: 0;
     top: 0;
 }
-footer p {
-    color: grey;
-    font-size: 12px;
-}
-footer a {
-    color: gray;
-    text-decoration: none;
-    font-size: 15px;
-}
-footer a:hover {
-    text-decoration: underline;
-}
 main section p {
     position: relative;
     left: 10px;
 }
 .esi {
     height: 70vh;
-    background-image: url(/personalweb/texture/landS.png);
+    background-image: url(texture/landS.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -65,7 +72,7 @@ main section p {
     opacity: 0;
     transition: 0.7s;
     animation: slideT 1s ease forwards;
-    animation-delay: calc(.2s*var(--i));
+    animation-delay: calc(.3s*var(--i));
 }
 .esi h2 {
     color: white;
@@ -105,6 +112,18 @@ main section p {
     animation: slideR 1s ease forwards;
     animation-delay: 0.7s;
 }
+footer p {
+    color: grey;
+    font-size: 12px;
+}
+footer a {
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
 /* 动画 */
 @keyframes slideR {
     0% {
@@ -142,5 +161,7 @@ main section p {
         opacity: 1;
     }
 }
-
-
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    
+}
