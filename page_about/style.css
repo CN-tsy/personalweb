@@ -42,6 +42,7 @@ header h1 {
 }
 main section{
     padding: 10px 15px;
+    background-color: rgb(231, 217, 199);
 }
 footer {
     margin-top: 10px;
@@ -116,4 +117,5 @@ footer a:hover {
         border: none;
         cursor: pointer;
     }
+
 }
