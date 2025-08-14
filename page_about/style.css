@@ -2,3 +2,9 @@ main section{
     padding: 10px 15px;
     background-color: rgb(231, 217, 199);
 }
+.CGTN {
+    display: flex;
+}
+.CGTN img {
+    height: 200px;
+}
