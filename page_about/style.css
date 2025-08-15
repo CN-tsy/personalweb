@@ -1,5 +1,6 @@
 main section{
-    padding: 10px 15px;
+    padding: 10px 30px;
+    line-height: 1.7em;
     background-color: rgb(231, 217, 199);
 }
 .CGTN {
@@ -8,3 +9,4 @@ main section{
 .CGTN img {
     height: 200px;
 }
+
