@@ -99,7 +99,8 @@ footer a:hover {
         display: none;
     }
     header h1 {
-        left: 40%;
+        display: flex;
+        justify-content: center; 
     }
     .menu {
         display: block;
@@ -111,4 +112,5 @@ footer a:hover {
         border: none;
         cursor: pointer;
     }
+
 }
