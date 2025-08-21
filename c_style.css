@@ -6,6 +6,10 @@
 body {
     overflow-x: hidden; 
 }
+.close {
+    margin-left: 11px;
+    padding: 0 2px;
+}
 .menu {
     display: none;
 }
@@ -117,4 +121,5 @@ footer a:hover {
     }
 
 }
+
 
