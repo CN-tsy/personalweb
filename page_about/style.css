@@ -8,5 +8,8 @@ main section{
 }
 .CGTN img {
     height: 200px;
+    border-radius:10px;
+    margin:5px;
 }
+/*@media */
 
