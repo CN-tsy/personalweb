@@ -1,3 +1,5 @@
+@import url('https://fonts.font.im/css?family=Roboto+Slab');
+
 *{
     padding: 0;
     margin: 0;
@@ -122,6 +124,7 @@ footer a:hover {
     }
 
 }
+
 
 
 
