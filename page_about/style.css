@@ -11,7 +11,7 @@ main section{
     border-radius:10px;
     margin:5px;
 }
-@media screen and (max-width: 768px){
+@media screen (max-width: 768px){
     .CGTN{
         display: flex;
         flex-direction: column;
@@ -24,3 +24,4 @@ main section{
         animation-delay: .7s;
     }
 }
+
