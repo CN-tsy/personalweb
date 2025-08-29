@@ -11,5 +11,16 @@ main section{
     border-radius:10px;
     margin:5px;
 }
-/*@media */
-
+@media screen and (max-width: 768px){
+    .CGTN{
+        display: flex;
+        flex-direction: column;
+    }
+    .CGTN img {
+        width: 350px;
+        height: auto;
+        opacity: 0;
+        animation: slideR 1s ease forwards;
+        animation-delay: .7s;
+    }
+}
