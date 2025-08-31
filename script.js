@@ -20,11 +20,12 @@ class TextSlider {
           height: 60px;
           overflow: hidden;
         }
-        .text-slide {/* 文字 */
+        .text-slide {/* 文字样式 */
           position: absolute;
           width: 100%;
           padding: 15px;
           font-size: 19px;
+          font-family: 'Poppins', sans-serif;
           transition: transform ${this.animationSpeed}ms ease-out, opacity ${this.animationSpeed}ms ease-out;
           transform: translateY(100%);
           opacity: 0;
@@ -90,4 +91,5 @@ class TextSlider {
   ], {
     duration: 5000,  // 切换间隔(ms)
     animationSpeed: 800  // 动画速度(ms)
+
   });
