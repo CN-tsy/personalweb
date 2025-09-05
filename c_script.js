@@ -1,4 +1,4 @@
-console.log("JavaScript文件已加载");
+console.log("JavaScript文件已加载0.1");
 
 document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector(".close");
@@ -38,4 +38,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
     closeBtn.addEventListener("click", hide);
 });
+
 
