@@ -1,3 +1,4 @@
+//感谢Copilot为本js文件Debug
 class TextSlider {
     constructor(containerId, texts, options = {}) {
       this.container = document.getElementById(containerId);
@@ -93,3 +94,4 @@ class TextSlider {
     animationSpeed: 800  // 动画速度(ms)
 
   });
+
