@@ -1,7 +1,5 @@
 console.log("JavaScript文件已加载");
-setTimeout(() => {
-    alert("已完成hamburger菜单的制作，手机将可以正常使用");
-}, 3000); // 3000毫秒=3秒
+
 document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector(".close");
     const tip = document.querySelector(".tips");
@@ -40,3 +38,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     closeBtn.addEventListener("click", hide);
 });
+
