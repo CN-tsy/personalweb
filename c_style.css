@@ -62,7 +62,7 @@ header {
 }
 .nav a {
     color: navy;
-    font-family: Poppins;
+    font-family: 'Poppins',sans-serif;
     text-decoration: none;
     margin-right: 4vw;
     opacity: 0;
@@ -172,6 +172,7 @@ footer a:hover {
         text-decoration: underline;
     }
 }
+
 
 
 
