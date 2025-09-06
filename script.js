@@ -88,10 +88,9 @@ class TextSlider {
   const slider = new TextSlider('slider-container', [
     '·添加这个滚动文字',
     '·为手机端添加了导航栏',
-    '·将原有的script.js更名为c_script.js并新建script.js',
+    '·导航栏(.menu)同步到所有页面',
   ], {
     duration: 5000,  // 切换间隔(ms)
     animationSpeed: 800  // 动画速度(ms)
 
   });
-
