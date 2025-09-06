@@ -91,7 +91,8 @@ class TextSlider {
     '·导航栏(.menu)同步到所有页面',
   ], {
     duration: 3500,  // 切换间隔(ms)
-    animationSpeed: 200  // 动画速度(ms)
+    animationSpeed: 350  // 动画速度(ms)
 
   });
+
 
