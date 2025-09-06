@@ -90,9 +90,10 @@ class TextSlider {
     '·为手机端添加了导航栏',
     '·导航栏(.menu)同步到所有页面',
   ], {
-    duration: 3500,  // 切换间隔(ms)
-    animationSpeed: 350  // 动画速度(ms)
+    duration: 4500,  // 切换间隔(ms)
+    animationSpeed: 500  // 动画速度(ms)
 
   });
+
 
 
