@@ -86,14 +86,15 @@ class TextSlider {
   }
   
   const slider = new TextSlider('slider-container', [
-    '·添加这个滚动文字',
-    '·为手机端添加了导航栏',
-    '·导航栏(.menu)同步到所有页面',
+    '·Latest Update :',
+    '·修改了header的css样式表',
+    '·修复了contact页面菜单bug',
   ], {
     duration: 4500,  // 切换间隔(ms)
     animationSpeed: 500  // 动画速度(ms)
 
   });
+
 
 
 
