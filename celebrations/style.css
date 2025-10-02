@@ -1,0 +1,44 @@
+main{
+    height: 670px;
+    background-image: url(images/breakfast.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+main h2{
+    font-size: 50px;
+    font-family: "仿宋",serif;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    opacity: 0;
+    animation: slideR 1s ease forwards;
+    animation-delay: 0.1s;
+}
+main h3{
+    font-size: 20px;
+    font-family: "Roboto slab",serif;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    opacity: 0;
+    animation: slideL 1s ease forwards;
+    animation-delay: 0.3s;
+}
+.bq {
+    height: 60px;
+    background-color: rgb(49, 49, 49);
+}
+.bq blockquote {
+    color: aliceblue;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    opacity: 0;
+    animation: slideR 1s ease forwards;
+    animation-delay: 0.7s;
+}
