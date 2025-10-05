@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="CN-zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <link href="../../c_style.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="hamburger">&#9776;</div>
+        <div class="menu">
+            <a href="../../index.html">Home</a>
+            <a href="../../page_about/index.html">About</a>
+            <a href="#">Articles</a>
+            <a href="../../page_contact/index.html">Contact</a>
+        </div>
+        <div class="overlay"></div>
+        <h1>Articles</h1>
+        <section class="nav">
+            <a href="../../index.html" style="--i:1">HOME</a>
+            <a href="../../page_about/index.html" style="--i:2">ABOUT</a>
+            <a href="#" style="--i:3">ARTICLES</a>
+            <a href="../../page_contact/index.html" style="--i:4">CONTACT</a>
+        </section>
+        
+    </header>
+    <main>
+        <h2>MBI计算</h2>
+        <section class="app">
+            <input placeholder="输入体重(kg)" class="w"></input>
+            <input placeholder="输入身高(m)" class="h"></input>
+            <button class="btn">计算MBI</button>
+            <div class="resultDiv">
+                <p>你的MBI：</p>
+                <p class="result">---</p>
+            </div>
+        </section>
+        <p class="egTitle">源码示例</p>
+        <code>
+            <pre><xmp>
+            <input placeholder="这是提示语"></input>
+            <script>
+                const input=document.querySelector("input");
+                input.addEventListener("keyup",function(e){
+                    if(e.key === 'Enter'){
+                        alert("你输入的内容是："+input.value);
+                    }
+                })
+            </script>
+            </xmp></pre>
+        </code>
+    </main>
+    
+    <script src="../../c_script.js"></script>
+    <script>
+        let w=document.querySelector(".w");
+        let h=document.querySelector(".h");
+        let result=document.querySelector(".result");
+        const btn=document.querySelector(".btn");
+
+        function bmi(){
+            w=w.value;
+            h=h.value;
+            w=Number(w);
+            h=Number(h);
+            console.log(w,h);
+            let a=w/(h*h);
+            a=a.toFixed(2);
+            result.innerHTML=a;
+        }
+        btn.addEventListener("click",bmi);
+    </script>
+</body>
+</html>
