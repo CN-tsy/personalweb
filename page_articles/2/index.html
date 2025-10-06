@@ -55,22 +55,27 @@
     
     <script src="../../c_script.js"></script>
     <script>
-        let w=document.querySelector(".w");
-        let h=document.querySelector(".h");
         let result=document.querySelector(".result");
         const btn=document.querySelector(".btn");
 
         function bmi(){
-            w=w.value;
-            h=h.value;
-            w=Number(w);
-            h=Number(h);
+            let w=document.querySelector(".w");
+            let h=document.querySelector(".h");
+            w=Number(w.value);
+            h=Number(h.value);
+            //获取并转型
             console.log(w,h);
             let a=w/(h*h);
+            if(isNaN(a) || a == Infinity || a == 0){
+                console.log(`'a'error:${a}`);
+                alert("请输入正确的值");
+                return;
+            }
             a=a.toFixed(2);
             result.innerHTML=a;
         }
         btn.addEventListener("click",bmi);
     </script>
 </body>
+
 </html>
