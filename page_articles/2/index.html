@@ -44,6 +44,10 @@
         let result=document.querySelector(".result");
         const btn=document.querySelector(".btn");
 
+        function _error(){
+            result.innerHTML="---";
+            alert("请输入正确的值");
+        }
         function bmi(){
             let w=document.querySelector(".w");
             let h=document.querySelector(".h");
@@ -52,10 +56,14 @@
             //获取并转型
             console.log(w,h);
             let a=w/(h*h);
-            if(isNaN(a) || a == Infinity || a == 0){
+            if(h < 0){
+                console.log(`'h'error:${h}`);
+                _error();
+                return;
+            }
+            if(isNaN(a) || a == Infinity || a <= 0){
                 console.log(`'a'error:${a}`);
-                result.innerHTML="---";
-                alert("请输入正确的值");
+                _error();
                 return;
             }
             a=a.toFixed(2);
@@ -66,5 +74,6 @@
 </body>
 
 </html>
+
 
 
