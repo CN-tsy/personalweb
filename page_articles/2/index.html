@@ -37,20 +37,6 @@
                 <p class="result">---</p>
             </div>
         </section>
-        <p class="egTitle">源码示例</p>
-        <code>
-            <pre><xmp>
-            <input placeholder="这是提示语"></input>
-            <script>
-                const input=document.querySelector("input");
-                input.addEventListener("keyup",function(e){
-                    if(e.key === 'Enter'){
-                        alert("你输入的内容是："+input.value);
-                    }
-                })
-            </script>
-            </xmp></pre>
-        </code>
     </main>
     
     <script src="../../c_script.js"></script>
@@ -68,6 +54,7 @@
             let a=w/(h*h);
             if(isNaN(a) || a == Infinity || a == 0){
                 console.log(`'a'error:${a}`);
+                result.innerHTML="---";
                 alert("请输入正确的值");
                 return;
             }
@@ -79,3 +66,4 @@
 </body>
 
 </html>
+
