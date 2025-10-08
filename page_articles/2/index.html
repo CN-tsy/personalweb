@@ -41,11 +41,17 @@
     
     <script src="../../c_script.js"></script>
     <script>
+        let ERRcnt=0;
         let result=document.querySelector(".result");
         const btn=document.querySelector(".btn");
 
         function _error(){
+            ERRcnt++;
             result.innerHTML="---";
+            if(ERRcnt >= 3){
+                alert("再玩就玩坏了");
+                return;
+            }
             alert("请输入正确的值");
         }
         function bmi(){
@@ -74,6 +80,3 @@
 </body>
 
 </html>
-
-
-
