@@ -23,6 +23,12 @@ input {
     animation-delay: 1.2s;
 }
 
+.standard {
+    opacity: 0;
+    animation: slideL 0.9s ease forwards;
+    animation-delay: 2s;
+}
+
 button {
     background-color: transparent;
     padding: 5px;
