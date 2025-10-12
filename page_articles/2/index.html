@@ -29,23 +29,39 @@
     <main>
         <h2>BMI计算</h2>
         <section class="app">
-            <input placeholder="输入体重(kg)" class="w"></input><br>
-            <input placeholder="输入身高(m)" class="h"></input>
+            <input placeholder="输入体重(kg)" class="w" style="--i:1"></input><br>
+            <input placeholder="输入身高(m)" class="h" style="--i:2"></input>
             <button class="btn">计算BMI</button>
             <div class="resultDiv">
                 <p>你的BMI：</p>
                 <p class="result">---</p>
             </div>
         </section>
-    </main>
-    
+        <section class="standard">
+            <h3>BMI标准</h3>
+            <ul>
+                <li class="light">BMI < 18.5 体重过轻</li>
+                <li class="usual">18.5 ≤ BMI < 24.9 正常范围</li>
+                <li class="heavy">25 ≤ BMI < 29.9 超重</li>
+                <li class="fat">BMI ≥ 30 肥胖</li>
+            </ul>
+        </section>
+    </main> 
     <script src="../../c_script.js"></script>
     <script>
         let ERRcnt=0;
         let result=document.querySelector(".result");
         const btn=document.querySelector(".btn");
+        const light=document.querySelector(".light");
+        const usual=document.querySelector(".usual");
+        const heavy=document.querySelector(".heavy");
+        const fat=document.querySelector(".fat");
 
         function _error(){
+            light.style.backgroundColor="white";
+            usual.style.backgroundColor="white";
+            heavy.style.backgroundColor="white";
+            fat.style.backgroundColor="white";
             ERRcnt++;
             result.innerHTML="---";
             if(ERRcnt >= 3){
@@ -53,6 +69,17 @@
                 return;
             }
             alert("请输入正确的值");
+        }
+        function standarder(a){
+            if(a < 18.5){
+                light.style.backgroundColor="lightblue";
+            }else if(a >= 18.5 && a < 24.9){
+                usual.style.backgroundColor="lightblue";
+            }else if(a >= 25 && a < 29.9){
+                heavy.style.backgroundColor="lightblue";
+            }else if(a >= 30){
+                fat.style.backgroundColor="lightblue";
+            }
         }
         function bmi(){
             let w=document.querySelector(".w");
@@ -74,10 +101,9 @@
             }
             a=a.toFixed(2);
             result.innerHTML=a;
+            standarder(a);
         }
         btn.addEventListener("click",bmi);
     </script>
 </body>
-
 </html>
-
