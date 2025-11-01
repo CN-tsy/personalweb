@@ -11,7 +11,7 @@ main section p {
 }
 .esi {
     height: 70vh;
-    background-image: url(texture/landS.png);
+    background-image: url(texture/bgi.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,3 +99,4 @@ main section p {
     opacity: 0;
     transform: translateY(-100%);
 }
+
