@@ -22,14 +22,24 @@ class TextSlider {
           overflow: hidden;
         }
         .text-slide {/* 文字样式 */
+          display: flex;
           position: absolute;
           width: 100%;
           padding: 15px;
           font-size: 19px;
-          font-family: 'Poppins', sans-serif;
           transition: transform ${this.animationSpeed}ms ease-out, opacity ${this.animationSpeed}ms ease-out;
           transform: translateY(100%);
           opacity: 0;
+        }
+        .text-slide::before {
+          display: block;
+          content: "";
+          width: 8px;
+          height: 8px;
+          background-color: #e50914;
+          margin-top: 10px;
+          margin-left: 5px;
+          margin-right: 8px;
         }
         .text-slide.active {
           transform: translateY(0);
@@ -86,15 +96,11 @@ class TextSlider {
   }
   
   const slider = new TextSlider('slider-container', [
-    '·Latest Update :',
-    '·修改了header的css样式表',
-    '·修复了contact页面菜单bug',
+    'Latest Update :',
+    '修改了主页背景图(.esi)',
+    '添加了特殊日期庆祝页面',
   ], {
     duration: 4500,  // 切换间隔(ms)
     animationSpeed: 500  // 动画速度(ms)
 
   });
-
-
-
-
