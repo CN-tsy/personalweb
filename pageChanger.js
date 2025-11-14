@@ -46,15 +46,7 @@ function triggerFestivalMode() {
 // 页面加载时检查
 document.addEventListener('DOMContentLoaded', checkFestivalDates);
 
-// 添加调试按钮（调试用）
-const debugButton = document.createElement('button');
-debugButton.textContent = '调试节日模式';
-debugButton.style.position = 'fixed';
-debugButton.style.bottom = '10px';
-debugButton.style.right = '10px';
-debugButton.style.zIndex = 1000;
-debugButton.addEventListener('click', triggerFestivalMode);
-document.body.appendChild(debugButton);
 
 // 每天检查一次（86400000毫秒=1天）
+
 setInterval(checkFestivalDates, 86400000);
