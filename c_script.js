@@ -33,3 +33,20 @@ closeBtn.addEventListener("click", () => {
     tip.style.display = 'none';
     console.log("closed");
 });
+
+function getNavHref(nav1Href, nav2Href, nav3Href, nav4Href) {
+    nav.innerHTML=`
+    <a href="${nav1Href}" style="--i:1">HOME</a>
+    <a href="${nav2Href}" style="--i:2">ABOUT</a>
+    <a href="${nav3Href}" style="--i:3">ARTICLES</a>
+    <a href="${nav4Href}" style="--i:4">NEWS</a>
+    `;
+
+    menu.innerHTML=`
+    <a href="${nav1Href}" style="--i:1">Home</a>
+    <a href="${nav2Href}" style="--i:2">About</a>
+    <a href="${nav3Href}" style="--i:3">Articles</a>
+    <a href="${nav4Href}" style="--i:4">News</a>
+    `;
+    console.log(`nav${nav}\nmenu${menu}`);
+}
