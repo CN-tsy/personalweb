@@ -1,4 +1,4 @@
-console.log("tsy c_script.js v=1.0");
+console.log("tsy c_script.js v=1.0.1");
 
 const closeBtn = document.querySelector(".close");
 const tip = document.querySelector(".tips");
@@ -6,6 +6,8 @@ const tip = document.querySelector(".tips");
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay');
+let nav=document.querySelector('.nav');
+
     
 // 点击汉堡按钮切换菜单状态
 hamburger.addEventListener('click', (e) => {
@@ -50,4 +52,5 @@ function getNavHref(nav1Href, nav2Href, nav3Href, nav4Href) {
     `;
     console.log(`nav${nav}\nmenu${menu}`);
 }
+
 
