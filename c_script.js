@@ -1,4 +1,4 @@
-console.log("HelloHorld");
+console.log("tsy c_script.js v=1.0");
 
 const closeBtn = document.querySelector(".close");
 const tip = document.querySelector(".tips");
@@ -50,3 +50,4 @@ function getNavHref(nav1Href, nav2Href, nav3Href, nav4Href) {
     `;
     console.log(`nav${nav}\nmenu${menu}`);
 }
+
