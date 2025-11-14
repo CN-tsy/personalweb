@@ -1,18 +1,5 @@
-main {
-    background-image: url(images/cgtnidbg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px 15px;
-    height: 700px;
-}
-main p{
-    color: aliceblue;
-}
+
 main a{
-    color :aquamarine;
+    color :blue;
     text-decoration: none;
-}
-.声明 {
-    display: flex;
-    align-items: center;
 }
