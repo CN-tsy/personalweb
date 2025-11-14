@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to tsy's web</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/personalweb/c_style.css">
     <link rel="stylesheet" href="/personalweb/style.css">
 </head>
@@ -11,18 +12,14 @@
     <header>
         <button class="hamburger">&#9776;</button>
         <div class="menu">
-            <a href="#">Home</a>
-            <a href="page_about/index.html">About</a>
-            <a href="page_articles/index.html">Articles</a>
-            <a href="page_contact/index.html">Contact</a>
         </div>
         <div class="overlay"></div>
         <h1>TSY-home</h1>
         <section class="nav">
-            <a href="#" style="--i:1">HOME</a>
+            <!-- <a href="#" style="--i:1">HOME</a>
             <a href="/personalweb/page_about/index.html" style="--i:2">ABOUT</a>
             <a href="/personalweb/page_articles/index.html" style="--i:3">ARTICALS</a>
-            <a href="/personalweb/page_contact/index.html" style="--i:4">CONTACT</a>
+            <a href="/personalweb/page_contact/index.html" style="--i:4">CONTACT</a> -->
         </section>
     </header>
     <main>
@@ -63,9 +60,13 @@
     <script src="/personalweb/c_script.js"></script>
     <script src="/personalweb/script.js"></script>
     <script src="pageChanger.js"></script>
+    <script>
+        getNavHref('#', '/personalweb/page_about/index.html', '/personalweb/page_articles/index.html', '/personalweb/page_contact/index.html');
+    </script>
 </body>
 
 </html>
+
 
 
 
