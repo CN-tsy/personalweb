@@ -101,5 +101,15 @@ main section p {
     opacity: 0;
     transform: translateY(-100%);
 }
-
-
+.tips {
+    border: 2px dotted rgb(49, 49, 49);
+    border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+    .bq blockquote {
+        font-size: 16px;
+    }
+    .bq {
+        height: 40px;
+    }
+}
