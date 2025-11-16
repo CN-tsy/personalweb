@@ -98,9 +98,10 @@ class TextSlider {
   const slider = new TextSlider('slider-container', [
     'Latest Update :',
     '修改了主页背景图(.esi)',
-    '添加了特殊日期庆祝页面',
+    '将.nav .menu修改为js添加元素[getNavHref(a,b,c,d)]',
   ], {
     duration: 4500,  // 切换间隔(ms)
     animationSpeed: 500  // 动画速度(ms)
 
   });
+
