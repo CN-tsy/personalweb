@@ -1,13 +1,13 @@
 @import url('https://fonts.font.im/css?family=Roboto+Slab');
-@import url('https://fonts.font.im/css?family=Poppins');
 @import url('https://fonts.font.im/css?family=Noto+Sans');
 
 *{
-    padding: 0;
     margin: 0;
-    font-family: "Noto Sans",sans-serif;
+    padding: 0;
+    /* font-family: "Aptos",sans-serif; */
 }
 body {
+    font-family: 'Noto Sans',sans-serif;
     overflow-x: hidden; 
 }
 .close {
@@ -23,8 +23,8 @@ body {
     left: -300px;
     width: 300px;
     height: 100vh;
-    background: #333;
-    color: white;
+    background: white;
+    color: black;
     transition: left 0.3s ease;
     z-index: 90;
 }
@@ -48,11 +48,12 @@ body {
     visibility: visible;
 }
 header {
-    color: white;
+    color: black;
     font-size: 16px;
-    background-color: rgb(17, 58, 148);
+    background-color: white;
     width: 100%;
     height: 70px;
+    border-bottom: 1px solid blue;
 }
 .nav {
     text-decoration: none;
@@ -62,7 +63,7 @@ header {
     line-height: 70px;
 }
 .nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     margin-right: 4vw;
     opacity: 0;
@@ -98,6 +99,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
 /* 动画 */
 @keyframes slideR {
     0% {
@@ -135,17 +137,19 @@ footer a:hover {
         opacity: 1;
     }
 }
-/* 响应式设计 */
+/* 响应式 */
 @media screen and (max-width: 768px) {
-    header a {
+    .nav a {
         display: none;
     }
     header h1 {
         display: flex;
         justify-content: center; 
+        align-items: center;
+        font-size: 25px;
     }
     .hamburger {
-        color: white;
+        color: black;
         display: block;
         background-color: transparent;
         font-size: 35px;
@@ -164,7 +168,7 @@ footer a:hover {
     .menu a {
         display: block;
         margin: 10px 20px;
-        color: whitesmoke;
+        color: black;
         text-decoration: none;
         font-size: 18px;
         font-family: 'Roboto slab', serif;
@@ -173,10 +177,3 @@ footer a:hover {
         text-decoration: underline;
     }
 }
-
-
-
-
-
-
-
