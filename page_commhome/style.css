@@ -1,0 +1,16 @@
+main {
+    margin: 10px 30px;
+}
+main p span {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+main p span::before{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    margin-right: 5px;
+}
